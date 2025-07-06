@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
       negativePrompt,
       width,
       height
-    ); // Use await here to handle the async function
+    ); 
     console.log("generatedImage", generatedImage);
 
     res.json({ imageUrl: generatedImage }); // Return the image URL
